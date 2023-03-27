@@ -9,8 +9,25 @@
             Navya Agarwal | Portfolio
         </title>
         <link rel="icon" type="image/x-icon" href="favicon.png">
+
+        <script type="text/javascript">
+            function getFact() {
+              var funfacts = new Array(4);
+
+              funfacts[0] = "fun fact -> I'm a Marvel fan! I stan Iron Man";
+              funfacts[1] = "fun fact -> Van Gogh is my favourite artist!";
+              funfacts[2] = "fun fact -> I paint and I like pretty pictures";
+              funfacts[3] = "fun fact -> I love disney movies!";
+
+              i = Math.floor(Math.random() * funfacts.length);
+
+              document.getElementById('funfact').innerHTML = funfacts[i];
+            }
+        </script>
+
     </head>
-    <body style="font-family: 'Amiri', serif;">
+    <body style="font-family: 'Amiri', serif;" onload="getFact()">
+
         <div class = "overlay">
             <div class="pfp" style="position: relative; float: left;">
                 <img src="background.png" width=250 style="border-radius: 50%;">
@@ -18,23 +35,24 @@
             <div class="info" style="position: relative; float: right;">
                 <p style="color: white; font-size: 7vh; margin-bottom: 0px;">Hi, I am Navya</p>
                 <p> >>> Second year CS undergrad at IGDTUW</p>
-                <p> >>> Currently dipping my toes in open source and data science</p>
-                <p> >>> I play around with websites</p>
-                <p> >>> I recently published a paper, check it out</p>
-                <p> >>> I paint and I like pretty pictures</p>
+                <p> >>> Currently dipping my toes in open source development</p>
+                <p> >>> I play around with websites and datasets</p>
+                <p> >>> I recently published a paper, check it out&nbsp;<a href="https://ieeexplore.ieee.org/document/10064887">here</a></p>
+                <p> >>> I'm working on my problem solving skills</p>
                 <br><br>
                 <p>
-                    <a href="#">Blog</a>
+                    <a href="#" onClick="return confirm('This section is a work in progress!')">Blog</a>
                     &nbsp;&nbsp;&nbsp;
-                    <a href="https://github.com/navyagarwal">Github</a>
+                    <a href="https://github.com/navyagarwal" target="_blank">Github</a>
                     &nbsp;&nbsp;&nbsp;
-                    <a href="https://www.linkedin.com/in/navya-agarwal-/">LinkedIn</a>
+                    <a href="https://www.linkedin.com/in/navya-agarwal-/" target="_blank">LinkedIn</a>
                     &nbsp;&nbsp;&nbsp;
-                    <a href="#">Download Resume</a>
+                    <a href="#" onClick="return confirm('This section is a work in progress!')">Download Resume</a>
                     &nbsp;&nbsp;&nbsp;
                 </p>
+                <br> <br>
+                <p id="funfact"></p>
             </div>
-            <!-- <p style="position: fixed; bottom: 10vh;">fun fact -> I don't drink coffee</p> -->
         </div>
     </body>
 </HTML>
