@@ -28,15 +28,20 @@ body {
 
 div.overlay{
     width: 90vw;
-    height: 90vh;
+    min-height: 90vh;
     background-color: rgba(0, 0, 0, 0.6);            
-    margin-top:5vh;
-    margin-left: 5vw;
+    margin-block:5vh;
+    margin-inline: 5vw;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     padding-inline: 10vw;
     padding-block: 10vh;
     box-sizing: border-box;
+}
+
+.info{
+    width: 40vw;
+    margin-left: 10vw;
 }
 
 p{
@@ -44,3 +49,23 @@ p{
     color: whitesmoke;
     font-size: 1.25rem;
 }
+
+.pfp{
+    margin-top: 5vh;
+}
+
+@media screen and (max-width: 600px) {
+    .info {
+      float: none;
+      width: 100%;
+      margin-left: auto;
+    }
+
+    .overlay {
+        flex-direction: column;
+    }
+
+    .pfp{
+        margin-top: 0vh;
+    }
+  }
