@@ -1,0 +1,46 @@
+a {
+    box-shadow: inset 0 0 0 0 #000000;
+    color: black;
+    padding: 0 .25rem;
+    margin: 0 -.25rem;
+    transition: color .5s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+a:hover {
+    color: black;
+    box-shadow: inset 500px 0 0 0 white;
+}
+
+a {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: Verdana, sans-serif;
+}
+
+div.overlay{
+    width: 90vw;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.6);            
+    margin-top:5vh;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 10vw;
+    padding-block: 10vh;
+    box-sizing: border-box;
+}
+
+p{
+    margin-block: 5vh;
+}
