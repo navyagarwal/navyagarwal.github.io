@@ -13,7 +13,6 @@ a:hover {
 
 a {
     color: white;
-    font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.5;
@@ -21,11 +20,10 @@ a {
 }
 
 body {
-    background-image: url('bg.jpg');
+    background-image: url('bg-giphy.gif');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-family: Verdana, sans-serif;
 }
 
 div.overlay{
@@ -42,5 +40,7 @@ div.overlay{
 }
 
 p{
-    margin-block: 5vh;
+    margin-block: 0;
+    color: whitesmoke;
+    font-size: 1.25rem;
 }
