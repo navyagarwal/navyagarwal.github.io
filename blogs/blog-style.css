@@ -1,0 +1,60 @@
+a {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div.overlay{
+    width: 80vw;
+    min-height: 90vh;
+    background-color: rgba(0, 0, 0, 0.8);            
+    margin-block:5vh;
+    margin-inline: 10vw;
+    /* display: flex; */
+    padding-inline: 10vw;
+    padding-block: 5vh;
+    box-sizing: border-box;
+}
+
+.info{
+    width: 40vw;
+    margin-left: 10vw;
+}
+
+p{
+    margin-block: 10;
+    color: whitesmoke;
+    font-size: 1.25rem;
+}
+
+h1{
+    color: whitesmoke;
+}
+
+h3{
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 600px) {
+    .info {
+      float: none;
+      width: 100%;
+      margin-left: auto;
+    }
+
+    .overlay {
+        flex-direction: column;
+    }
+
+    .pfp{
+        margin-top: 0vh;
+    }
+  }
