@@ -15,12 +15,12 @@
 
         <div class="overlay">
 
-            <h1>Outreachy Blog #2: Learning new things</h1>
+            <h1>Outreachy Blog #2: Learning New Things</h1>
             <p>Hi all, this is my third week as an Outreachy intern at NetworkX.</p>
             <p>In the past weeks, I have attended weekly meetings with my mentors, worked on a pedagogical notebook for the PageRank algorithm, and made PRs for other bugs in the networkx repo. The more I progress in my internship, the more I realize how flexible it is, and I can make as much of it as I want to.</p>
             <p>For many people, it can be intimidating to start contributing to a large Open Source project like NetworkX for the first time. It was very much so for me when I first started. There is a lot of technical jargon, concepts, and processes one may need help understanding. In this blog, I will discuss two things I found particularly confusing when I started – testing and pre-commit.</p>
             
-            <h3>Testing</h3>
+            <h2>Testing</h2>
             <p>Software testing – I had studied it as part of my “Software Engineering” subject in college, but only in theoretical terms. I had no idea how test suites for large software were written, structured, or maintained. But when I started contributing to NetworkX, I saw a lot of issues and PRs related to the test suite and test coverage that I could not understand.</p>
             <p>Test suites play a vital role in the software development life cycle by verifying that the code behaves as expected and remains functional. In Open Source projects, where multiple developers work simultaneously, test suites are critical. They provide confidence in the stability of the codebase and facilitate the integration of contributions from various contributors.</p>
             <p>In addition to writing tests, it is crucial to measure test coverage to understand how much of the code is exercised by the test suite. Test coverage is the metric that indicates the percentage of code lines or branches that are executed during testing. Higher test coverage usually correlates with a higher level of confidence in the codebase.</p>
@@ -29,9 +29,9 @@
             <p>Once the test suite is in place, Codecov can be integrated into the CI/CD pipeline to collect coverage data during test execution automatically. Codecov then generates detailed reports highlighting the code's covered and uncovered lines or branches. These reports can be viewed online or shared with the project's contributors and maintainers.</p>
             <p>Having test coverage reports provided by Codecov helps in multiple ways. First, it allows identifying areas of the code that are not adequately covered by tests, enabling one to focus testing efforts on those specific areas. Second, it helps identify potential bugs or vulnerabilities that might have been missed during testing. Lastly, it provides a valuable metric to showcase the quality and reliability of the project to the Open Source community and potential users.</p>
 
-            <h3>Pre-commit</h3>
+            <h2>Pre-commit</h2>
             <p>Another essential aspect of software development is ensuring code quality and consistency.</p>
-            <p>Pre-commit is a versatile and easy-to-use framework that integrates with the version control system (e.g., Git) and allows you to automatically run various checks on your code before it is committed. It defines a set of pre-commit hooks, which are scripts or commands that perform specific checks or modifications on your code. These hooks can encompass various tasks, such as code formatting, linting, and spell-checking.</p>
+            <p>Pre-commit is a versatile and easy-to-use framework that integrates with the version control system (like Git) and allows you to automatically run various checks on your code before it is committed. It defines a set of pre-commit hooks, which are scripts or commands that perform specific checks or modifications on your code. These hooks can encompass various tasks, such as code formatting, linting, and spell-checking.</p>
             <p>One of the primary advantages of pre-commit is that it helps maintain code consistency across an Open Source project. By enforcing consistent coding standards, such as code formatting and style conventions, pre-commit ensures that the codebase remains clean and readable. This consistency improves collaboration among developers, enhances code maintainability, and reduces the likelihood of introducing subtle bugs caused by inconsistent coding practices.</p>
             
             <br>
