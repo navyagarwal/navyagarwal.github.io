@@ -1,0 +1,58 @@
+<HTML>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="home-style.css">
+        <title>
+            Navya Agarwal | Portfolio
+        </title>
+        <link rel="icon" type="image/x-icon" href="favicon.png">
+
+        <script type="text/javascript">
+            function getFact() {
+              var funfacts = new Array(4);
+
+              funfacts[0] = "fun fact -> I'm a Marvel fan! I stan Iron Man";
+              funfacts[1] = "fun fact -> Van Gogh is my favourite artist!";
+              funfacts[2] = "fun fact -> I paint and I like pretty pictures";
+              funfacts[3] = "fun fact -> I love disney movies!";
+
+              i = Math.floor(Math.random() * funfacts.length);
+
+              document.getElementById('funfact').innerHTML = funfacts[i];
+            }
+        </script>
+
+    </head>
+    <body style="font-family: 'Amiri', serif;" onload="getFact()">
+
+        <div class = "overlay">
+            <div class="pfp" style="position: relative; float: left;">
+                <img src="background.png" width=250 style="border-radius: 50%;">
+            </div>
+            <div class="info" style="position: relative; float: right;">
+                <p style="color: white; font-size: 7vh; margin-bottom: 0px;">Hi, I am Navya</p>
+                <p> >>> Second year CS undergrad at IGDTUW</p>
+                <p> >>> Currently dipping my toes in open source development</p>
+                <p> >>> I play around with websites and datasets</p>
+                <p> >>> I recently published a paper, check it out&nbsp;<a href="https://ieeexplore.ieee.org/document/10064887">here</a></p>
+                <p> >>> I'm working on my problem solving skills</p>
+                <br><br>
+                <p>
+                    <a href="blogs/blog-list.html" target="_blank">Blog</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="https://github.com/navyagarwal" target="_blank">Github</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/in/navya-agarwal-/" target="_blank">LinkedIn</a>
+                    &nbsp;&nbsp;&nbsp;
+                    <a href="#" onClick="return confirm('This section is a work in progress!')">Download Resume</a>
+                    &nbsp;&nbsp;&nbsp;
+                </p>
+                <br> <br>
+                <p id="funfact"></p>
+            </div>
+        </div>
+    </body>
+</HTML>
