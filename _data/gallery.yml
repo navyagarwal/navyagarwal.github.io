@@ -1,0 +1,41 @@
+---
+name: "gallery"
+arts:
+# Column 1
+- image: "images/galleries/gallery/AvenueinSchlossKammerPark.jpg"
+  order: "1"
+  title: "Avenue in Schloss Kammer Park"
+  artist: "Gustav Klimt"
+  description: 
+  
+- image: "images/galleries/gallery/Expectation.jpg"
+  order: "2"
+  title: "title"
+  artist: "Gustav Klimt"
+  description: "description"
+
+- image: "images/galleries/gallery/hygeia-detail-of-medicine-1907.jpg"
+  order: "3"
+  title: "title"
+  artist: "Gustav Klimt"
+  description: "description"
+
+# Column 2
+- image: "images/galleries/gallery/Baby.jpg"
+  order: "4"
+  title: "Baby"
+  artist: "Gustav Klimt"
+  description: "Image with a description. This could be more info about the medium, the client, the project itself, etc."
+
+- image: "images/galleries/gallery/Lady-with-Hat-and-Feather-Boa.jpg"
+  order: "5"
+  title: "title"
+  artist: "Gustav Klimt"
+  description: "description"
+
+- image: "images/galleries/gallery/klimt.jpg"
+  order: "6"
+  title: "title"
+  artist: "Gustav Klimt"
+  description: "description"
+ 
