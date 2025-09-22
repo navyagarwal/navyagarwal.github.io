@@ -1,42 +1,38 @@
+# ====================
 # Site settings
-title: Starving Artist Jekyll Theme
-email: ctarwater@chrisanthropic.com
-author: Chrisanthropic
+# ====================
+title: Navya IRL
+email: navya.agarwal.in@gmail.com
+author: Navya Agarwal
 
-keywords: jekyll, jekyll theme, portfolio theme, artist theme
-description: Witty description here.
+keywords: Navya Agarwal, software, code, projects, AI experiments, web stuff, learning, mistakes, thinking out loud, dev life
+description: "This is me putting my code, projects, ideas, and experiments online. Stuff I build, things I learn, and random thoughts I want to keep track of as I go through life."
 
-# Only use this if you are serving your site via Github Pages
 github:
-  url: "https://chrisanthropic.github.io/starving-artist-jekyll-theme"
+  url: "https://navyagarwal.github.io"
 
-header: images/logo.png
+url: "http://localhost:4000"
+baseurl: ""  # works locally
 
-# Formspree contact Form
-contact_form: "https://formspree.io/ctarwater@chrisanthropic.com"
+header: images/logo_light.png
 
-
-# Exclude our ruby stuff
+# ====================
+# Build settings
+# ====================
 exclude: [.bundle, .vendor, .bin, starving-artist.gemspec, bin, vendor, Gemfile, Gemfile.lock, Rakefile, s3_website.yml, starving-artist-jekyll-theme-*.gem]
 
-
-# Build settings
 markdown: kramdown
 kramdown:
   input: GFM
 
-theme: starving-artist-jekyll-theme
-  
-# Plugins
-gems:
+plugins:
   - jekyll-feed
 
 feed:
   path: atom.xml
-  
-# Compress our Css
-#sass:
-#    style: :compressed
+
+sass:
+  style: :compressed
 
 include: ['_pages']
 
@@ -45,19 +41,15 @@ permalink: /blog/:year/:title
 collections:
   - galleries
 
-#### SEO Stuff
-# Google Analytics
-google_universal_analytics: 
+# ====================
+# SEO & Analytics
+# ====================
+
+# Google Analytics (replace with your tracking ID if you want analytics)
+google_universal_analytics: "G-FB371FE8P8"
 google_universal_analytics_cookiedomain: auto
 
-# Facebook Opengraph
-facebook_user:
-facebook_app_id:                                #enter your App ID
-facebook_locale: en_US
-facebook_page:                                  #the URL of your Facebook Page
-facebook_image: images/author.jpg                      #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
-
 # Twitter Cards
-twitter_user: 
+twitter_user: "@Navya_Agarwal_"
 twitter_card: true
-twitter_image: images/author.jpg                       #enter a default image (at least 200x200px) to use here for posts/pages that don't have one.
+twitter_image: images/logo_light.png
