@@ -12,13 +12,7 @@
     margin: 0 0 .25rem 0;
     font-size: 2rem;
   }
-
-  .muted {
-    color: #6b7280;
-    margin-bottom: 1rem;
-  }
 }
-
 .timeline {
   position: relative;
   padding-left: 2rem;
@@ -27,11 +21,12 @@
   &::before {
     content: "";
     position: absolute;
-    left: 8px;
-    top: 0;
-    bottom: 0;
+    left: 7px; // center of the 14px bullet
+    top: 6px; // start at the center of the first bullet
+    bottom: 6px; // end at the center of the last bullet
     width: 2px;
     background: rgba(100, 100, 100, 0.12);
+    z-index: 0; // behind bullets
   }
 }
 
@@ -49,8 +44,9 @@
     height: 14px;
     border-radius: 50%;
     background: #fff;
-    border: 2px solid var(--accent, #2563eb);
+    border: 2px solid var(--accent, #fff);
     box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    z-index: 1; // above the line
   }
 }
 
@@ -92,15 +88,6 @@
   li {
     margin: 0.25rem 0;
   }
-}
-
-.timeline-footer {
-  margin-top: 2.25rem;
-  border-top: 1px solid rgba(0,0,0,0.05);
-  padding-top: 1rem;
-  text-align: center;
-  font-size: .9rem;
-  color: #6b7280;
 }
 
 @media (max-width: 640px) {
