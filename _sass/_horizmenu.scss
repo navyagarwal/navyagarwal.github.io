@@ -59,15 +59,15 @@
 }
 
 // Hover state of the links
-#nav>.primary-nav>li:hover>a {
-	color: $navbar-hover-color;
-	border-top-color: #fff;
-}
+// #nav>.primary-nav>li:hover>a {
+// 	color: $navbar-hover-color;
+// 	border-top-color: #fff;
+// }
 
 // Active state of the links
-#nav>.primary-nav>li.active {
-	background-color: $navbar-active-color;
-}
+// #nav>.primary-nav>li.active {
+// 	background-color: $navbar-active-color;
+// }
 
 #nav>.primary-nav>li.dropdown>a {
 	padding-right: 28px;
@@ -77,7 +77,7 @@
     color: $header-link-color;
 }
 
-// Dropdown menu arrow}
+// Dropdown menu arrow
 #nav .primary-nav .dropdown>a::after {
 	position: absolute;
 	display: block;
@@ -95,25 +95,6 @@
     opacity: 1;
 }
 
-// Submenus
-#nav .primary-nav ul {
-	z-index: auto;
-	display: block;
-	position: absolute;
-	top: $navbar-height;
-	left: -9999px;
-	opacity: 0;
-	background: $navbar-color;
-	cursor: pointer;
-	border-bottom-left-radius: 3px;
-	border-bottom-right-radius: 3px;
-	-webkit-transition: opacity .22s ease-in;
-	-ms-transition: opacity .22s ease-in;
-	-moz-transition: opacity .22s ease-in;
-	-o-transition: opacity .22s ease-in;
-	transition: opacity .22s ease-in;
-}
-
 #nav .primary-nav ul li {
 	display: block;
 	position: absolute;
@@ -125,45 +106,17 @@
 	transition: height .15s ease-in;
 }
 
-// Submenu appears when its parent is hovered
-#nav>.primary-nav>li:hover>ul {
-	left: 0px;
-	opacity: 1;
-}
 
 #nav .primary-nav li:hover>ul>li {
 	position: relative;
 	height: 31px;
 }
 
-// Submenu links
-#nav .primary-nav ul li a {
-	/* Layout */
-	display: block;
-	padding: 7px 12px 7px 22px;
-	width: 200px;
-
-	/* Typography */
-	font-family: $navbar-font-family;
-	font-size: ($navbar-font-size * .92);
-	text-decoration: none;
-	color: #fefefe;
-	font-weight: 400;
-	
-	/* Background & effects */
-	background: $navbar-color;
-	-webkit-transition: color .2s ease-in, border-left-color .2s ease-in;;
-	-ms-transition: color .2s ease-in, border-left-color .2s ease-in;;
-	-moz-transition: color .2s ease-in, border-left-color .2s ease-in;;
-	-o-transition: color .2s ease-in, border-left-color .2s ease-in;;
-	transition: color .2s ease-in, border-left-color .2s ease-in;;
-}
-
 // Change the link color on hover
-#nav .primary-nav ul li:hover>a {
-	color: $navbar-hover-color;
-    background: lighten($navbar-color, 10%);
-}
+// #nav .primary-nav ul li:hover>a {
+// 	color: $navbar-hover-color;
+//     background: lighten($navbar-color, 10%);
+// }
 
 .nav ul ul {
 	display: none;
