@@ -94,9 +94,7 @@ body {
   background: #fffcfa;
   min-height: 180px;
   cursor: pointer;
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
-.project-card:hover { transform: translateY(-2px); border-color: #e7b6a3; box-shadow: 0 10px 20px rgba(200, 87, 45, 0.08); }
 .project-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
 .project-head h3 { margin: 0; font-size: var(--fs-h3); line-height: var(--lh-tight); }
 .project-card p { margin: 0.55rem 0 0; line-height: 1.62; }

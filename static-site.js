@@ -13,6 +13,18 @@ const blogPosts = [
   { id: '2', title: 'Another Interesting Post', date: 'February 28, 2024', excerpt: 'More thoughts on something. Could be technical, creative, or personal. Whatever you want to share.', body: 'More thoughts on something. Could be technical, creative, or personal. Whatever you want to share. This is the full post body in static mode.' },
   { id: '3', title: 'Thoughts on Something', date: 'January 10, 2024', excerpt: 'Writing about experiences, learnings, or just random musings.', body: 'Writing about experiences, learnings, or just random musings. This is the full post body in static mode.' }
 ];
+const timelineItems = [
+  { date: 'May 2025', event: 'started as a full time software engineer', place: 'Motorq' },
+  { date: 'May 2025', event: 'finished my b.tech. major project and graduated with a 9.23 GPA woohoo' },
+  { date: 'Jan 2025', event: 'joined as a research assistant', place: 'MISN Lab, IIT Delhi' },
+  { date: 'Aug 2024', event: 'received full-time offer based on performance and continued working as a co-op intern', place: 'Motorq' },
+  { date: 'May 2024', event: 'started as a software engineering summer intern', place: 'Motorq' },
+  { date: 'May 2024', event: 'joined as a research assistant', place: 'FSIL Lab, Georgia Tech' },
+  { date: 'Jan 2024', event: 'started as an ML engineering intern', place: 'Corteva Agriscience' },
+  { date: 'May 2023', event: 'funded by the Software Freedom Conservancy, as part of the Outreachy program to work on OSS', place: 'NetworkX' },
+  { date: 'Dec 2022', event: 'published my first research paper!' },
+  { date: 'Jan 2022', event: 'joined as a CS engg undergrad', place: 'IGDTUW' }
+];
 const projectItems = [
   { id: '1', title: 'Project One', year: '2024', description: 'Built a thing that does something interesting. Learned about X, Y, and Z in the process.', imageUrl: '', link: '' },
   { id: '2', title: 'Project Two', year: '2023', description: 'Created something cool with friends. It was challenging but rewarding.', imageUrl: '', link: '' },
@@ -25,6 +37,7 @@ const blogList = document.getElementById('blog-list');
 const blogPostTitle = document.getElementById('blog-post-title');
 const blogPostMeta = document.getElementById('blog-post-meta');
 const blogPostBody = document.getElementById('blog-post-body');
+const timelineList = document.getElementById('timeline-list');
 const lightbox = document.getElementById('lightbox');
 const lightboxImage = document.getElementById('lightbox-image');
 const lightboxCaption = document.getElementById('lightbox-caption');
@@ -72,6 +85,14 @@ function renderBlogList() {
       </a>
     </article>
   `).join('');
+}
+
+function renderTimeline() {
+  if (!timelineList) return;
+  timelineList.innerHTML = timelineItems.map((item) => {
+    const placeText = item.place ? ` <span class="primary">@${item.place}</span>` : '';
+    return `<p><span class="muted">${item.date}</span> <span class="dot"></span> <span class="timeline-content">${item.event}${placeText}</span></p>`;
+  }).join('');
 }
 
 function getRoute() {
@@ -178,6 +199,7 @@ window.addEventListener('hashchange', renderRoute);
 
 setActiveFilter('me');
 renderBlogList();
+renderTimeline();
 renderRoute();
 closeLightbox();
 closeProjectModal();
