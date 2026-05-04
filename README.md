@@ -1,11 +1,16 @@
+# Navya Agarwal Website (Static GitHub Pages)
 
-  # Cutesy Portfolio Website
+This website now runs as a plain static site with no build step and no npm requirement.
 
-  This is a code bundle for Cutesy Portfolio Website. The original project is available at https://www.figma.com/design/herKwDHDtEPWPpyFPdCqzI/Cutesy-Portfolio-Website.
+## Entrypoint
 
-  ## Running the code
+- `index.html` is the GitHub Pages entrypoint.
+- It loads `static-site.css` and `static-site.js` directly.
 
-  Run `npm i` to install the dependencies.
+## Local Preview
 
-  Run `npm run dev` to start the development server.
-  
+Open `index.html` in a browser, or serve this folder with any static file server.
+
+## Deployment
+
+Push this repository to GitHub and enable GitHub Pages from the repository root (`main` branch). GitHub will serve `index.html` directly.
